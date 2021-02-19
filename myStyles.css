@@ -9,3 +9,7 @@ body{
 .date-text{
     color: rgb(180, 230, 197);
 }
+
+.time-block-time{
+    background-color: rgb(83, 179, 235);
+}
