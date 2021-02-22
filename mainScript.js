@@ -41,9 +41,11 @@ function updateBgs(){
     var now = new Date();
     $('.date-text').text(month[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
     var hour = now.getHours();
+    // console.log(hour);
     // timeBlocks.children().css('background-color', 'white');
     for(var i = 0; i< timeBlocks.length; i++){
         var blockTime = Number($(timeBlocks[i]).children().eq(2).attr('my-index')) + 9;
+        // console.log(blockTime);
         if(blockTime < hour){
             $(timeBlocks[i]).children().css('background-color', 'rgb(176, 184, 202)');
         } else if (blockTime == hour){
